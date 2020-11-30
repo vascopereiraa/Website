@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link href="nav_styles.css" rel="stylesheet"> 
+    <link href="footer_styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="display.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/0e1aed2a91.js" crossorigin="anonymous"></script>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> --> <!--FONTE DA NAV-->
+    <title>COOL THE PLANET</title>
+</head>
+
+<body>
+    <!-- BARRA DE NAVEGAÇAO -->
+    <header>
+        <a href="main.html">
+            <h2 class="logo">COOL THE PLANET</h2>
+        </a>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul class="menu">
+            <a class="menu-link" href="eventos.html">Eventos</a>
+            <a class="menu-link" href="sobre_nos.html">Sobre Nós</a>
+            <a class="menu-link" href="recursos.html">Recursos</a>
+            <a class="menu-link" href="utilizador.html" id="perfil">Perfil</a> 
+            <a class="menu-link" href="login.html" id="login">Login</a>
+            <a class="menu-link" href="#" id="terminarSessao"><i class="fas fa-sign-out-alt"></i></a>
+            <label for="chk" class="hide-menu-btn">
+                <i class="fas fa-times"></i>
+            </label>
+        </ul>
+    </header>
+
+    <!-- CORPO DA PAGINA -->
+    <div class="grid-container">
+        <div class="left-column">
+            <!-- SEM CONTEUDO -->
+        </div>
+
+
+
+        <div class="mid-column">
+            <div class="top-info">
+                <h3>Alterações climáticas - Nota trabalho: 91,3%</h3>
+                <h4>Será isto o fim do mundo como o conhecemos?</h4>
+            </div>
+            <div class="conteudo">
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.</p> -->
+                <p>
+                    As alterações climáticas estão a afetar todos os países e continentes do globo. Estão a atrapalhar 
+                    diversas economias nacionais e a afetar a vidas, com um alto custo para as pessoas, comunidades e países
+                    hoje em dia e ainda mais custarão no futuro. Os padrões climáticos estão se a alterar, o nível do mar está a subir
+                    cada vez temos mais tornados, furacões e tempestades e cada vez mais intensas, cada vez mais extremos e as emissões
+                    de gases aumentam o efeito de estufa atingiram os níveis mais altos já registados. 
+                </p>
+                <p>
+                    Atualmente já estão disponiveis soluções limpas, baratas e escaláveis a grandes populações que permitem
+                    diminuir os efeitos colateráis do aquecimento global. A população mundial já devia estar mais a par de todos os novos
+                    acontecimentos no globo e deveriam preocupar-se mais com o planeta, mas não é o que acontece, os governos das principais
+                    potencias mundiais não estão preocupados com o ambiente desde que as suas contas sejam superiores às de antigos governantes
+                    mas esquecem-se que sem um planeta não há economias nem potencias mundiais.
+                </p>
+                <p>
+                    Por isso cabe a cada um de nós zelar pelo nosso planeta porque planeta como a Terra só há um, ao contrário de um
+                    smarthphone que podemos substituir quando se parte, o nosso planeta é insubstituível e andamos a "brincar" com o que temos
+                    e é tão importante para nós!
+                </p>
+            </div>
+            <div class="efeitos">
+                <h4>Estes são alguns dos efeitos das alterações climáticas</h4>
+                <div class="slideshow centrar">
+                    <div class="slides">
+                        <input type="radio" name="r" id="r1" checked>
+                        <input type="radio" name="r" id="r2">
+                        <input type="radio" name="r" id="r3">
+                        <input type="radio" name="r" id="r4">
+                        <input type="radio" name="r" id="r5">
+                        <div class="slide p1">
+                            <img src="Imagens/Imagem1.jpg" alt="1">
+                        </div>
+                        <div class="slide">
+                            <img src="Imagens/Imagem2.jpg" alt="2">
+                        </div>
+                        <div class="slide">
+                            <img src="Imagens/Imagem3.jpg" alt="3">
+                        </div>
+                        <div class="slide">
+                            <img src="Imagens/Imagem4.jpeg" alt="4">
+                        </div>
+                        <div class="slide">
+                            <img src="Imagens/Imagem5.jpg" alt="5">
+                        </div>
+                    </div>
+                    <div class="navegacao">
+                        <label for="r1" class="pontos"></label>
+                        <label for="r2" class="pontos"></label>
+                        <label for="r3" class="pontos"></label>
+                        <label for="r4" class="pontos"></label>
+                        <label for="r5" class="pontos"></label>
+                    </div>
+                </div>
+            </div>
+            <h4 id="info">Algumas informações:</h4>
+            <div class="caixa-conteudo">
+                <div class="noticias" id="caixa">
+                    <div class="ntc-img">
+                        <!-- ESPACO PARA IMAGEM -->
+                    </div>
+                    <div class="ntc-txt">
+                        <h4>Fluxos de transito elevados</h4>
+                        <p>Como resultado da forte industrialização as maiores cidades do planeta estão sobrelotadas
+                            e a maior parte da sua população possui um meio de transporte próprio, o que leva a uma exagerada
+                            taxa de emissões de gases que prejudicam o planeta, aumentam o efeito de estufa e provocam um
+                            aumento no buraco da camada de ozono.
+                        </p>
+                    </div>
+                </div>
+                <div class="noticias2" id="caixa">
+                    <div class="ntc-txt">
+                        <h4>Excessiva desflorestação</h4>
+                        <p>Devido a interesses politicos e económicos, cada vez mais são descobertos casos de desflorestações ilegais com o 
+                            objetivo de ganhar algo, seja a nível monetário quer a nível social, mas são estas futilidades que nos estão a matar a todos,
+                            é a partir destas árvores quem vem grande parte do oxigénio que respiramos, e são essenciais para a vida na terra.
+                        </p>
+                    </div>
+                    <div class="ntc-img">
+                        <!-- ESPACO PARA IMAGEM -->
+                    </div>
+                </div>    
+            </div>
+            <div class="espaco">
+
+            </div>
+        </div>
+
+
+
+        <div class="right-column">
+            <!-- SEM CONTEUDO -->
+        </div>
+    </div>
+
+    <!-- RODAPE -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left-columm">
+                <!-- SEM CONTEUDO -->
+                
+            </div>
+            <div class="footer-mid-left-column">
+                <h3>ADERE JÁ A ESTA CAUSA, FAZ MAIS PELO PLANETA</h3>
+                <h4>Contacta uma organização ambiental através de: </h4>
+                <p id="para"> 217 788 474</p>
+                <p>quercus@quercus.pt</p>
+            </div>
+            <div class="footer-mid-right-column">
+                <h4>Ou dirige-te a: </h4>
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4233.155412462973!2d-9.17935490730883!3d38.73855430249354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19333a524ad381%3A0x88a8c3d7df180422!2sQuercus!5e0!3m2!1spt-PT!2spt!4v1577399426567!5m2!1spt-PT!2spt" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <div class="footer-right-column">
+                <!-- SEM CONTEUDO -->
+            </div>
+        </div>
+    </footer>
+    <script src="lg_ts.js"></script>
+</body>
+</html>

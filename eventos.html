@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="nav_styles.css">
+    <link rel="stylesheet" href="footer_styles.css">
+    <link rel="stylesheet" href="eventos.css">
+    <link rel="stylesheet" href="display.css">
+    <script src="https://kit.fontawesome.com/0e1aed2a91.js" crossorigin="anonymous"></script>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> -->
+    <title>EVENTOS</title>
+</head>
+
+<body>
+    <!-- BARRA DE NAVEGAÇAO -->
+    <header>
+        <a href="main.html">
+            <h2 class="logo">COOL THE PLANET</h2>
+        </a>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul class="menu">
+            <a class="menu-link" href="eventos.html">Eventos</a>
+            <a class="menu-link" href="sobre_nos.html">Sobre Nós</a>
+            <a class="menu-link" href="recursos.html">Recursos</a>
+            <a class="menu-link" href="utilizador.html" id="perfil">Perfil</a> 
+            <a class="menu-link" href="login.html" id="login">Login</a>
+            <a class="menu-link" href="#" id="terminarSessao"><i class="fas fa-sign-out-alt"></i></a>
+            <label for="chk" class="hide-menu-btn">
+                <i class="fas fa-times"></i>
+            </label>
+        </ul>
+    </header>
+
+    <!-- CORPO DA PAGINA -->
+    <div class="grid-container">
+        <div class="left-column">
+
+        </div>
+        <div class="mid-column">
+            <!-- Conteúdo -->
+            <div class="conteudo">
+                <h3>Ações promovidas pela organização</h3>
+                <p id="main">
+                    Como todos sabemos o clima não se encontra nas melhores condições.
+                    Desta maneira várias organizações se dedicaram a tentar que as 
+                    alterações climáticas sejam cada vez mais reduzidas.
+                    Para isso desenvolveram vários projetos entre os quais:
+                </p>
+                <p><span id="medidas">1.</span> Com intenções de evitar o investimento em gás em vez de 
+                    outros combustiveis mais saudaveis para o ambiente, alguns ativistas lançaram
+                    a campanha "Gás é andar para trás.".
+                </p>
+                <p>
+                    <span id="medidas">2.</span> Outra das medidas oferecidas pela organização,são palestras 
+                    que,ao informarem as pessoas sobre o que está a acontecer ao 
+                    planeta e as consequencias dessas mesmas mudanaças apelam ao seu
+                    publico por pequenos atos de mudança e salientam que se esses
+                    pequenos atos forem realizados por todos, as alterações podem ser
+                    extremamente significativas.
+                </p>
+                <p>
+                    <span id="medidas">3.</span> Outra medida tomada por organizações foi publicar estudos científicos nas suas 
+                    diferentes áreas de concentração, que oferecem panoramas aprofundados 
+                    sobre os problemas ambientais do mundo e sua relação com a sociedade, 
+                    ao mesmo tempo em que dão instrumentos e alternativas para que a realidade 
+                    atual se modifique em direção a um modelo de vida sustentável.
+                </p>
+            </div>
+        
+            <!-- Galeria de Imagens -->
+            <div class="galeria">
+                <img src="Imagens/manifestacao.jpg">
+                <img src="Imagens/palestras.jpg">
+                <img src="Imagens/jornais.png">
+            </div>
+
+            <!-- Formulário -->
+            <h4 id="form">Caso deseje ver alguma ideia em prática deixe-nos saber</h4>
+            <div class="formulario">
+                <form action="mailto:cooltheplanet@tweb.com" target="_blank" method="POST" >
+                    <label for="pnome">Primeiro Nome:</label>
+                    <input type="text" name="primeiro nome" id="pnome" maxlength="20" value="" pattern="[A-Za-z]{1,}" required>
+                
+                    <label for="unome">Último Nome:</label>
+                    <input type="text" name="ultimo nome" id="unome" maxlength="20" pattern="[A-Za-z]{1,}" required>
+                
+                    <label for="distrito">Distrito:</label>
+                    <input name="distrito" id="loc" list="distrito" required>
+                    <datalist id="distrito">
+                        <option value="Aveiro"></option>
+                        <option value="Beja"></option>
+                        <option value="Braga"></option>
+                        <option value="Bragança"></option>
+                        <option value="Castelo Branco"></option>
+                        <option value="Coimbra"></option>
+                        <option value="Évora"></option>
+                        <option value="Faro"></option>
+                        <option value="Guarda"></option>
+                        <option value="Leiria"></option>
+                        <option value="Lisboa"></option>
+                        <option value="Portalegre"></option>
+                        <option value="Porto"></option>
+                        <option value="Santarém"></option>
+                        <option value="Setúbal"></option>
+                        <option value="Viana do Castel"></option>
+                        <option value="Vila Real"></option>
+                        <option value="Viseu"></option>
+                        <option value="Açores"></option>
+                        <option value="Madeira"></option>
+                    </datalist>
+                </input>
+                
+                    <label for="obs">Que ação que pretende ver realizada no futuro?</label>
+                    <textarea name="obs" id="obs" cols="30" rows="10" required></textarea>
+                
+                    <input type="submit" value="Submeter">
+                </form>
+            </div>
+        </div>
+
+        <div class="right-column">
+            
+        </div>
+    </div>
+    
+    <!-- RODAPE -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left-columm">
+                <!-- SEM CONTEUDO -->
+                
+            </div>
+            <div class="footer-mid-left-column">
+                <h3>ADERE JÁ A ESTA CAUSA, FAZ MAIS PELO PLANETA</h3>
+                <h4>Contacta uma organização ambiental através de: </h4>
+                <p id="para"> 217 788 474</p>
+                <p>quercus@quercus.pt</p>
+            </div>
+            <div class="footer-mid-right-column">
+                <h4>Ou dirige-te a: </h4>
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4233.155412462973!2d-9.17935490730883!3d38.73855430249354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19333a524ad381%3A0x88a8c3d7df180422!2sQuercus!5e0!3m2!1spt-PT!2spt!4v1577399426567!5m2!1spt-PT!2spt" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <div class="footer-right-column">
+                <!-- SEM CONTEUDO -->
+                
+            </div>
+        </div>
+    </footer>    
+    <script src="lg_ts.js"></script>
+</body>
+</html>

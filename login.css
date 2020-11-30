@@ -1,0 +1,94 @@
+/* TIPO DE LETRA */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+.container {
+    font-family: 'Roboto Slab', serif;
+    min-height: 100vh;
+    background-image: linear-gradient(120deg, #002e4d, #1aa3ff);
+}
+
+.login-form {
+    width: 360px;
+    background: #fff;
+    height: 35em;
+    padding: 80px 40px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.txtb {
+    border-bottom: 2px solid navy;
+    position: relative;
+    margin: 1em 0;
+}
+
+.txtb input {
+    font-size: 15px;
+    color: #333;
+    border: none;
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 0 5px;
+    height: 40px;
+}
+
+.log-btn {
+    display: block;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btm-txt {
+    margin-top: 2em;
+    text-align: center;
+    font-size: 13px;
+}
+
+.btm-txt p {
+    color: black;
+}
+
+/* Página de Registo */
+
+.reg-btn {
+    display: block;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#return-btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+.return p {
+    font-size: 14px;
+    color: black;
+}
+
+/* CONFIGURAÇÃO DA APARENCIA DOS BUTOES NO MODO MOBILE */
+@media screen and (max-width: 800px) {
+    .login-form {
+        width: 80%;
+        height: auto;
+        top: 24em;
+    }
+    
+    button {
+        border: solid 1px black;
+    }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="nav_styles.css">
+    <link rel="stylesheet" href="footer_styles.css">
+    <link rel="stylesheet" href="sobre_nos_paginas.css">
+    <link rel="stylesheet" href="display.css">
+    <script src="https://kit.fontawesome.com/0e1aed2a91.js" crossorigin="anonymous"></script>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> -->
+    <title>Quem Somos?</title>
+</head>
+
+<body>
+    <!-- BARRA DE NAVEGAÇAO -->
+    <header>
+        <a href="main.html">
+            <h2 class="logo">COOL THE PLANET</h2>
+        </a>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul class="menu">
+            <a class="menu-link" href="eventos.html">Eventos</a>
+            <a class="menu-link" href="sobre_nos.html">Sobre Nós</a>
+            <a class="menu-link" href="recursos.html">Recursos</a>
+            <a class="menu-link" href="utilizador.html" id="perfil">Perfil</a> 
+            <a class="menu-link" href="login.html" id="login">Login</a>
+            <a class="menu-link" href="#" id="terminarSessao"><i class="fas fa-sign-out-alt"></i></a>
+            <label for="chk" class="hide-menu-btn">
+                <i class="fas fa-times"></i>
+            </label>
+        </ul>
+    </header>
+    
+    <!-- CORPO DA PAGINA -->
+    <div class="grid-container">
+        <div class="left-column">
+
+        </div>
+        <div class="mid-column">
+            <div class="top-info">
+                <h3>Quem Somos?</h3>
+                <!-- <h4>Será isto o fim do mundo como o conhecemos?</h4> -->
+            </div>
+            <div class="informacoes">
+                <p>Somos das maiores organizações ambientais em Portugal, fundada a 31 de outubro de 1985, em Braga.</p>
+                <p>
+                    Somos uma associação apartidária, independente, sem fins lucrativos constituida por cidadão que se juntaram em torno do mesmo interesse
+                    pela conservação da Natureza, dos recursos naturais e pelo ambiente em geral, numa perspetiva de um desenvolvimento sustentável.
+                </p>
+                <p>
+                    Constituimos uma organização descentralizada, com núcleos em todo o país, incluindo as regiões autónomas dos Açores e Madeira.
+                </p>
+                <h4>Como nos encontrar?</h4>
+                <p>
+                    Para chegar até nos podem utilizar os contactos disponiveis, tanto através do telefone como por email.
+                    Pode também dirigir-se a um núcleo na sua região ou à nossa sede social em Lisboa.
+                    Ou então através do formulário disponibilizado a baixo, onde entraremos em contacto consigo para futuras ações na sua região.
+                </p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4233.155412462973!2d-9.17935490730883!3d38.73855430249354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19333a524ad381%3A0x88a8c3d7df180422!2sQuercus!5e0!3m2!1spt-PT!2spt!4v1577399426567!5m2!1spt-PT!2spt" width="100%" height="600em" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            
+            <!-- Formulário -->
+            <h4 id="titulo_form">Junte-se à nossa equipa</h4>
+            <div class="formulario">
+                <form action="mailto:cooltheplanet@tweb.com" method="POST">
+                    <label for="pnome">Primeiro Nome:</label>
+                    <input type="text" name="primeiro nome" id="pnome" maxlength="20" pattern="[A-Za-z]{1,}" required>
+    
+                    <label for="unome">Último Nome:</label>
+                    <input type="text" name="ultimo nome" id="unome" maxlength="20" pattern="[A-Za-z]{1,}" required>
+    
+                    <label for="Sexo">Sexo:</label>
+                    <input name="sexo" id="sex" list="sexo" required>
+                    <datalist id="sexo">
+                        <option value="Masculino"></option>
+                        <option value="Feminino"></option>
+                        <option value="Não definido"></option>
+                    </datalist>
+                    </input>
+    
+                    <label for="cc">Cartão de Cidadão / B.I:</label>
+                    <input type="text" name="cc" id="cc" maxlength="12" pattern="[0-9]{9}[A-Za-z]{2}[0-9]{1}" required>
+
+                    <label for="idade">Idade:</label>
+                    <input type="text" name="idade" id="idade" maxlength="2" pattern="[0-9]{1,}" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="morada">Morada:</label>
+                    <input type="text" name="morada" id="morada" required>
+
+                    <input type="submit" value="Submeter">
+                </form>
+            </div>
+            <div class="espaco">
+                <!-- SEM CONTEUDO -->
+            </div>
+            
+        </div>
+        <div class="right-column">
+            
+        </div>
+    </div>
+    
+    <!-- RODAPE -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left-columm">
+                <!-- SEM CONTEUDO -->
+                
+            </div>
+            <div class="footer-mid-left-column">
+                <h3>ADERE JÁ A ESTA CAUSA, FAZ MAIS PELO PLANETA</h3>
+                <h4>Contacta uma organização ambiental através de: </h4>
+                <p id="para"> 217 788 474</p>
+                <p>quercus@quercus.pt</p>
+            </div>
+            <div class="footer-mid-right-column">
+                <h4>Ou dirige-te a: </h4>
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4233.155412462973!2d-9.17935490730883!3d38.73855430249354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19333a524ad381%3A0x88a8c3d7df180422!2sQuercus!5e0!3m2!1spt-PT!2spt!4v1577399426567!5m2!1spt-PT!2spt" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <div class="footer-right-column">
+                <!-- SEM CONTEUDO -->
+                
+            </div>
+        </div>
+    </footer>    
+    <script src="lg_ts.js"></script>
+</body>
+</html>

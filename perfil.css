@@ -1,0 +1,19 @@
+/* TIPO DE LETRA */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
+
+.mid-column {
+  height: auto;
+  padding: 10px;
+  font-family: 'Roboto Slab', serif; 
+}
+
+
+.top-info h3 {    
+    font-size: 40px;
+    text-transform: uppercase;
+    opacity: 100%;
+    color: #002e4d;
+    font-weight: bold;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}

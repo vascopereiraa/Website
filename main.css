@@ -1,0 +1,275 @@
+/* TIPO DE LETRA */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+.mid-column {
+    /* border: solid 1px red; */
+    padding: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.top-info {
+    color: rgb(226, 226, 226);
+    position: relative;
+    top: 30px;
+    text-align: left;
+}
+
+.top-info h3 {
+    font-size: 50px;
+    text-transform: uppercase;
+    opacity: 100%;
+    color: #002e4d;
+    font-weight: bold;
+}
+
+.top-info h4 {
+    margin-top: 10px;
+    font-size: 22px;
+    color: #1aa3ff;
+    font-weight: bold;
+}
+
+.conteudo {
+    position: relative;
+    top: 50px;
+    /* border: solid 1px black; */
+}
+
+.conteudo p {
+    text-align: justify;
+    text-justify: distribute;    
+    padding-bottom: 20px;
+    font-size: 16px;
+    color: #000;
+}
+
+.efeitos {
+    margin-top: 90px;
+}
+
+.efeitos h4 {
+    font-size: 22px;
+    margin-bottom: 1em;
+    color: #1aa3ff;
+    font-weight: bold;
+}
+
+#perfil {
+    display: none;
+}
+
+/* CSS PARA CONFIGURAR O SLIDESHOW */
+.slideshow {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 3em;
+}
+
+.centrar {
+    position: sticky;
+    /* top: 73%; */
+    /* left: 25%; */
+    /* transform: translate(-50%,-50%); */
+}
+
+.navegacao {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.pontos {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.pontos:hover {
+    background-color: #fff;
+}
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+/* MUDANCA DE IMAGEM NO SLIDESHOW */
+#r1:checked ~ .p1 {
+    margin-left: 0;
+}
+
+#r2:checked ~ .p1 {
+    margin-left: -20%;
+}
+
+#r3:checked ~ .p1 {
+    margin-left: -40%;
+}
+
+#r4:checked ~ .p1 {
+    margin-left: -60%;
+}
+
+#r5:checked ~ .p1 {
+    margin-left: -80%;
+}
+
+#info {
+    margin-top: 10px;
+    font-size: 22px;
+    color: #1aa3ff;
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+/* Informativo no final da pagina com imagem a esquerda*/
+
+.noticias {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 100%;
+    border: 1px solid black;
+    border-radius: 20px 20px 20px 20px;
+    height: 350px;
+    font-family: 'Roboto Slab', serif;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+    margin-bottom: 2.5em;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.noticias .ntc-img {
+    background: url(Imagens/transito.jpg);
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    height: auto;
+}
+
+.noticias .ntc-txt {
+    padding: 2em 2em;
+}
+
+.noticias .ntc-txt h4 {
+    color: cornflowerblue;
+    padding-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+.noticias .ntc-txt p {
+    color: grey;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+}
+
+#caixa:hover {
+    transform: scale(1.1);
+    /* transform: scale(0.5); */
+    transition: 0.4s ease-in-out;
+    box-shadow: 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Informativo no final da pagina com imagem a direita*/
+.noticias2 {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 100%;
+    border: 1px solid black;
+    border-radius: 20px 20px 20px 20px;
+    height: 350px;
+    font-family: 'Roboto Slab', serif;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+    margin-bottom: 2.5em;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.noticias2 .ntc-img {
+    background: url(Imagens/desflores.jpeg);
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    height: auto;
+}
+
+.noticias2 .ntc-txt {
+    padding: 2em 2em;
+}
+
+.noticias2 .ntc-txt h4 {
+    color: cornflowerblue;
+    padding-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+.noticias2 .ntc-txt p {
+    color: grey;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+}
+
+/* INFORMATIVO NA VERSAO MOBILE */
+
+@media screen and (max-width: 800px) {
+    /* 1a Versao - Imagem/info */
+    .caixa-conteudo {
+        display: block;
+    }
+
+    .noticias .ntc-txt {
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .noticias .ntc-txt h4 {
+        padding-top: 1em;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .noticias2 .ntc-txt {
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .noticias2 .ntc-txt h4 {
+        padding-top: 1em;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    #caixa:hover {
+        transform: none;
+    }
+}
+
+/* Controlo do espaçamento para o footer, em caso de necessidade */
+.espaco {
+    height: 0em;
+    width: 100%;
+}

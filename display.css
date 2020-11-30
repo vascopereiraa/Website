@@ -1,0 +1,37 @@
+/****************************************************
+        TORNA O CONTEUDO DO SITE RESPONSIVE
+    E PERMITE A VISUALIZACAO EM TODOS OS DISPLAYS 
+****************************************************/
+
+/* VISAO DO SITE EM CSS GRID */
+.grid-container {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: auto;
+}
+
+/* CONTROLO DAS AREAS DA GRID */
+.left-column {
+    /* background-color: blue; */
+    background-color: #fff;
+}
+
+.mid-column {
+    /* background-color: red; */
+    background-color: #fff;
+}
+
+.right-column {
+    /* background-color: blue; */
+    background-color: #fff;
+}
+
+/* Valor do max-width igual em todo o site: 800px
+            VISÃO MOBILE DO SITE                  */
+@media screen and (max-width: 800px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 0 100% 0;
+        grid-template-rows: auto;
+    }
+}

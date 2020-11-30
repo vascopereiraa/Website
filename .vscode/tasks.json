@@ -1,0 +1,19 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "SASS COMPILER - Eventos",
+            "type": "shell",
+            "command": "sass eventos_corpo.scss eventos.css",
+            "group": "build"
+        },
+        {
+            "label": "SASS COMPILER - Sobre Nos",
+            "type": "shell",
+            "command": "sass sobre_nos_paginas.scss sobre_nos_paginas.css",
+            "group": "build"
+        }
+    ]
+}

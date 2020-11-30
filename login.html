@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="nav_styles.css">
+    <link rel="stylesheet" href="footer_styles.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/0e1aed2a91.js" crossorigin="anonymous"></script>
+    <title>LOGIN</title>
+</head>
+
+<body>
+    <!-- BARRA DE NAVEGAÇAO -->
+    <header>
+        <a href="main.html">
+            <h2 class="logo">COOL THE PLANET</h2>
+        </a>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul class="menu">
+            <a class="menu-link" href="eventos.html">Eventos</a>
+            <a class="menu-link" href="sobre_nos.html">Sobre Nós</a>
+            <a class="menu-link" href="recursos.html">Recursos</a>
+            <a class="menu-link" href="utilizador.html" id="perfil">Perfil</a> 
+            <a class="menu-link" href="login.html" id="login">Login</a>
+            <a class="menu-link" href="#" id="terminarSessao"><i class="fas fa-sign-out-alt"></i></a>
+            <label for="chk" class="hide-menu-btn">
+                <i class="fas fa-times"></i>
+            </label>
+        </ul>
+    </header>
+
+    <!-- Formulário de Login -->
+    <div class="container">
+        <div class="login-form">
+            <h2>LOGIN</h2>
+            <div class="txtb">
+                <input type="text" placeholder="Username" id="user">
+            </div>
+            <div class="txtb">
+                <input type="password" placeholder="Password" id="pass">
+            </div>
+            <button class="log-btn" name="login">Iniciar Sessão</button>
+            <div class="btm-txt">
+                <p>Não está registado? <a href="registo.html">Registe-se agora</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+    <script src="lg_ts.js"></script>
+</body>
+</html>
+

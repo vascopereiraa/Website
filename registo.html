@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="nav_styles.css">
+    <link rel="stylesheet" href="footer_styles.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/0e1aed2a91.js" crossorigin="anonymous"></script>
+    <title>REGISTO</title>
+</head>
+
+<body>
+    <!-- BARRA DE NAVEGAÇAO -->
+    <header>
+        <a href="main.html">
+            <h2 class="logo">COOL THE PLANET</h2>
+        </a>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul class="menu">
+            <a class="menu-link" href="eventos.html">Eventos</a>
+            <a class="menu-link" href="sobre_nos.html">Sobre Nós</a>
+            <a class="menu-link" href="recursos.html">Recursos</a>
+            <!-- <a class="menu-link" href="utilizador.html" id="perfil">Perfil</a>  -->
+            <a class="menu-link" href="login.html" id="login">Login</a>
+            <!-- <a class="menu-link" href="#" id="terminarSessao"><i class="fas fa-sign-out-alt"></i></a> -->
+            <label for="chk" class="hide-menu-btn">
+                <i class="fas fa-times"></i>
+            </label>
+        </ul>
+    </header>
+
+    <!-- Registo do novo utilizador -->
+    <div class="container">
+        <div class="login-form">
+            <h2>Novo Utilizador</h2>
+            <div class="return">
+                <p>Já está registado? <a href="login.html">Faça o seu login agora</a></p>
+            </div>
+            <div class="txtb">
+                <input type="text" placeholder="Nome" id="nome" required autofocus>
+            </div>
+            <div class="txtb">
+                <input type="text" placeholder="Username" id="novoUser" required>
+            </div>
+            <div class="txtb">
+                <input type="password" placeholder="Password" id="novaPass" required>
+            </div>
+            <div style="padding-bottom: 1em;"></div>
+            <button class="reg-btn" id="registo" name="registo">Registo</button>
+        </div>
+    </div>
+    <script src="registo.js"></script>
+    <script src="lg_ts.js"></script>
+</body>
+</html>

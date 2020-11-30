@@ -1,0 +1,159 @@
+/* TIPO DE LETRA */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
+.mid-column {
+  height: auto;
+  padding: 10px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.top-info {
+  color: #e2e2e2;
+  position: relative;
+  top: 30px;
+  text-align: left;
+}
+
+.top-info h3 {
+  font-size: 50px;
+  text-transform: uppercase;
+  opacity: 100%;
+  color: #002e4d;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+.top-info h4 {
+  margin-top: 10px;
+  font-size: 22px;
+  color: #1aa3ff;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+.informacoes {
+  margin-bottom: 1em;
+}
+
+.informacoes h3 {
+  font-size: 50px;
+  text-transform: uppercase;
+  opacity: 100%;
+  color: #002e4d;
+  font-weight: bold;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.informacoes h4 {
+  margin-top: 10px;
+  font-size: 22px;
+  color: #1aa3ff;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+.informacoes p {
+  text-align: justify;
+  text-justify: distribute;
+  padding-bottom: 20px;
+  font-size: 16px;
+  color: black;
+}
+
+#pdf {
+  display: block;
+  width: 100%;
+  height: 500px;
+}
+
+.pdf:first-child {
+  margin-bottom: 3em;
+  padding: 2em;
+}
+
+#quercus {
+  text-decoration: none;
+  color: #999999;
+}
+
+#titulo_form {
+  color: #1aa3ff;
+  font-weight: bold;
+  font-size: 22px;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.formulario {
+  border-radius: 5px;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: lightgrey;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #002e4d;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+#sex {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #002e4d;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #002e4d;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #002e4d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #1aa3ff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.espaco {
+  height: 2em;
+}
+
+#tam_pg {
+  margin-top: 7em;
+  margin-bottom: 7em;
+}
+
+@media screen and (max-width: 800px) {
+  #tam_pg {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+/*# sourceMappingURL=sobre_nos_paginas.css.map */

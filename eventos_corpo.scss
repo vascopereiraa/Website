@@ -1,0 +1,123 @@
+//TIPO DE LETRA
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+// Cores
+$cor_principal: #002e4d;
+$cor_secundaria: #1aa3ff;
+$cor_tercearia: #999999;
+$texto_navbar: rgb(226, 226, 226);
+$texto_cor: black;
+
+$fundo:rgba(85, 146, 187, 0.568);
+$teste:rgb(22, 94, 153);
+
+// Configuração da página
+.mid-column{
+    padding: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#main {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.conteudo h3 {
+    position: relative;
+    top: 30px;
+    font-size: 45px;
+    text-transform: uppercase;
+    opacity: 100%;
+    color: $cor_principal;
+    font-weight: bold;
+    padding-bottom: 1em;
+}
+
+.conteudo h4 {
+    color: $cor_secundaria;
+    font-weight: bold;
+    font-size: 22px;
+    padding-bottom: 1em;
+}
+
+#form {
+    color: $cor_secundaria;
+    font-weight: bold;
+    font-size: 22px;
+    padding-bottom: 1em;
+}
+
+.conteudo p {
+    text-align: justify;
+    text-justify: distribute;    
+    padding-bottom: 20px;
+    font-size: 16px;
+    color: $texto_cor;
+}
+
+#medidas {
+    font-size: 22px;
+    font-weight: bold;
+    color: $cor_secundaria;
+}
+
+// Configuração da galeria de imagens
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 1em;
+    padding: 1em
+}
+
+img {
+    width: 30%;
+    height: auto;
+    padding:1em;
+    object-fit: cover;
+}
+
+// Configuração do formulário
+.formulario {
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: lightgrey;
+    margin-bottom: 2em;
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid $cor_principal; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+}
+
+#loc {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid $cor_principal; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: $cor_principal;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: $cor_secundaria;
+    transition: 0.2s;
+}
